@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item> <!-- Cambia el color del appbar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!-- Cambia el color de la barra de estado -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/fondo_app</item>
+    </style>
+</resources>

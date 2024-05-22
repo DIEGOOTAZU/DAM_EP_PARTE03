@@ -20,4 +20,10 @@
     <string name="rbutton_Urban" />
     <string name="rbutton_urbano">Urbano</string>
     <string name="rbutton_rural">Rural</string>
+    <string name="cbutton_Gato">Gato</string>
+    <string name="cbutton_Perro">Perro</string>
+    <string name="cbutton_Pollo">Pollo</string>
+    <string name="cbutton_Pato">Pato</string>
+    <string name="cbutton_Otro">Otro</string>
+    <string name="button_Enviar">Enviar</string>
 </resources>

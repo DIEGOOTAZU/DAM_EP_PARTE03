@@ -4,7 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo_app"
     tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbutton_Gato"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/cbutton_Perro"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cbutton_Pollo"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/cbutton_Pato"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cbutton_Otro"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox4"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
         android:id="@+id/textView"
@@ -14,6 +77,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="149dp"
         android:text="CENSO DAM 2024"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,20 +87,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"
         android:text="@string/text_view_nombresyapellidos"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="137dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/input_apellidosynombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -45,29 +112,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
         android:text="@string/textview_correo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
         android:text="@string/textview_clave"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="166dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="6dp"
+        android:layout_width="195dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
         android:ems="10"
         android:inputType="@string/input_contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
@@ -75,10 +146,12 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="193dp"
         android:layout_height="29dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="@string/input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -87,16 +160,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
         android:text="@string/textview_telefono"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="201dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="196dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="@string/input_phone"
@@ -107,19 +181,24 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="28dp"
         android:text="@string/textview_fechaN"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="30dp" />
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="193dp"
+        android:layout_width="198dp"
         android:layout_height="31dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
         android:ems="10"
         android:inputType="@string/input_fechadeN"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
@@ -128,19 +207,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="26dp"
         android:text="@string/textview_horadeN"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTime"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toTopOf="@+id/editTextTime" />
 
     <EditText
         android:id="@+id/editTextTime"
-        android:layout_width="188dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
+        android:layout_width="199dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
         android:ems="10"
         android:inputType="@string/input_horadeN"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
@@ -148,31 +230,138 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="32dp"
         android:text="@string/textview_residencia"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
 
     <RadioGroup
-        android:layout_width="113dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTime">
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime"
+        tools:layout_editor_absoluteX="183dp">
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="113dp"
-            android:layout_height="25dp"
-            android:text="@string/rbutton_rural" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textColor="@color/white"
+            tools:text="@string/rbutton_urbano" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="116dp"
-            android:layout_height="32dp"
-            android:text="@string/rbutton_urbano" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbutton_rural"
+            android:textColor="@color/white" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:text="¿Cuántas personas viven en la vivienda?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberSigned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberSigned"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="143dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:text="Ingreso (Sueldo) promedio de la familia (Decimales)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="199dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="129dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:text="¿Que opina sobre los bonos otorgados por el gobierno?"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="199dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="127dp"
+        android:layout_height="37dp"
+        android:text="Mascotas que viven en casa"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox5"
+        app:layout_constraintTop_toTopOf="@+id/checkBox5"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <Button
+        android:id="@+id/button_Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_Enviar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="197dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

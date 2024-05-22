@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#F4AF23</color> <!-- Color del appbar -->
+    <color name="colorPrimaryDark">#F4AF23</color> <!-- Color de la barra de estado -->
+    <color name="colorAccent">#FF4081</color>
+    <color name="fondo_app">#018cd1</color>
 </resources>
