@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Formulario de Censo Dam 2024</string>
+    <string name="text_view_nombresyapellidos">Apellidos y nombres</string>
+    <string name="input_apellidosynombres" />
+    <string name="textview_correo">Correo</string>
+    <string name="input_correo" />
+    <string name="textview_clave">Clave</string>
+    <string name="input_clave">Clave</string>
+    <string name="input__clave" />
+    <string name="input_contraseña" />
+    <string name="input_email" />
+    <string name="textview_telefono">Telefono de contacto</string>
+    <string name="input_phone" />
+    <string name="textview_fechaden">Fecha de Nacimientp</string>
+    <string name="textview_fechaN">Fecha de Nacimiento</string>
+    <string name="input_fechadeN" />
+    <string name="textview_horadeN">Hora de Nacimiento</string>
+    <string name="input_horadeN" />
+    <string name="textview_residencia">Zona de residencia</string>
+    <string name="rbutton_Urban" />
+    <string name="rbutton_urbano">Urbano</string>
+    <string name="rbutton_rural">Rural</string>
+</resources>
